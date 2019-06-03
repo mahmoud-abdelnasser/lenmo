@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", HelveticaNeue, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+[role='main'] {
+  /* Space for fixed navbar */
+  width: calc(100% - #{$sidebar-width});
+  background:#f8f7fe;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  .page-content {
+    width: 100%;
+    height: calc(100% - 55px);
+    overflow-x: auto;
+    &.full-height {
+      height: 100%;
+    }
+    .page-bg{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 200px;
+        background: radial-gradient(farthest-side at top, transparent 99%, #f8f7fe 100%) no-repeat center calc(100% + 1px) / 120% 25%,#f2eefb;
+    }
+    .page-body{
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold
+        }
+    }
+  }
+}

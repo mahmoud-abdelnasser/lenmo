@@ -1,0 +1,14 @@
+@import "variables";
+
+// libraries
+@import "~normalize.css/normalize.css";
+@import "~bootstrap/scss/bootstrap";
+// base 
+@import "base";
+
+// layouts
+@import "nav";
+@import "tobBar";
+// components
+@import "coming-soon";
+@import "investment";
