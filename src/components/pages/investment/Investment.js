@@ -18,6 +18,7 @@ class Investment extends Component {
             <Col md={{ size: 8, offset: 2 }}>
               <h1>My loan</h1>
               <InvestBox title={"Processing Loans"} data={investProcessing} />
+              <div className="divider"></div>
               <InvestBox title={"Current Loans"} data={investCurrent} />
             </Col>
           </Row>
