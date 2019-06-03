@@ -1,5 +1,10 @@
 .invest-page{
-    padding: 2rem 0;
+    padding: 1.4rem 0;
+    .divider{
+        background: #888888;;
+        height: 1px;
+        margin-bottom: 10px;
+    }
     .invest-box{
         padding: 1.2rem 0;
         h2{
@@ -9,18 +14,24 @@
             background: #fff;
             border-radius: 8px;
             margin-bottom: 1.5rem;
+            border-radius: 16px;
             .invest-card-top{
                 display: flex;
-                align-items: center;
+                align-items: start;
                 padding: .8rem 1.2rem;
                 .card-name{
                     position: relative;
                     width: 124px;
                     text-align: center;
+                    padding-top: 10px;
                     i{
                         display: block;
                         font-size: 40px;
                         color: #7648fa;
+                        &:before{
+                            border: 5px solid #817ef94a;
+                            border-radius: 50%;
+                        }
                     }
                     span{
                         position: absolute;
